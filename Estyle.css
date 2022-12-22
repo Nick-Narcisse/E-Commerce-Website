@@ -1,0 +1,328 @@
+html { 
+	scroll-behavior: smooth; 
+	height: 100%;/*vh stands for viewpoint height which means the height will be equal to 100% of the viewport. So whatever screen is being used to view it will be able to see it entirely */
+	width: 100%;
+	background-color: black;
+	background-size:  cover;
+	background-position:  center;
+	overflow: visible;
+ } 
+
+
+nav{
+	display: flex; /*fills up empty space*/
+	align-items:  center;
+	justify-content: space-between;
+	padding-top: 0px;
+	padding-right: 0%;
+
+	
+
+}
+
+nav input{
+	border-radius: 200px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;	
+}
+
+nav ul li{  /*changes nav, ul, and li tags*/
+	list-style-type:  none;
+	display: inline-block;
+	padding:  10px 20px;
+
+}
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight:  bold;
+	text-transform: capitalize;
+	font-size: 17px;
+	font-family: "Courier New";
+}
+
+nav ul li a:hover{
+	color: red;
+	transition: .4s;
+}
+
+/*Company name*/
+.title{
+	color: white; 
+	font-size: 25px;
+	letter-spacing: 1px;
+	font-family: "Garamond";
+	
+}
+
+
+/*company logo*/
+.title img{
+	height:5%;
+	width:5%;
+}
+
+span{
+	color: red;
+}
+
+
+/* sets up the appropriate proportions for the images*/
+.slider{
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+/* sets up the appropriate proportions for the images*/
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+
+/* sets up the appropriate proportions for the images*/
+.slides input{
+  display: none;
+}
+
+
+/* sets up the appropriate proportions for the images*/
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+.navigation-mannual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+/*the btns for displaying what slide its on */
+.mannual-btn{
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.mannual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.mannual-btn:hover{
+  background-color: #ccc;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/* Automatic Navigation */
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+  margin-left: 30%;
+}
+
+
+.navigation-auto div{
+  border: 2px solid #333;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~.navigation-auto .auto-btn-1{
+  background: #ccc;
+}
+
+#radio2:checked ~.navigation-auto .auto-btn-2{
+  background: #ccc;
+}
+
+
+#radio3:checked ~.navigation-auto .auto-btn-3{
+  background: #ccc;
+}
+
+#radio4:checked ~.navigation-auto .auto-btn-4{
+  background: #ccc;
+}
+
+
+
+/* the bar in the middle of the bag*/
+.midbar{
+	background-color: #1f1d1d;
+	color: white;
+	position:relative;
+	padding: 10px 0px;
+	width:100%;
+	letter-spacing: 1px;
+	line-height: 25px;
+	font-size: 20px;
+	font-family: "Courier New";
+	border-radius: 10px;
+
+}
+
+.midbar-list {
+	list-style-type:  none;
+	display: inline;
+	padding:  10px 40px;
+	display: flex; /*fills up empty space*/
+	align-items:  right;
+	padding-left: 5%;
+	align-items:  center;
+	justify-content: space-between;
+
+}
+
+.midbar-list a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+
+
+.midbar-list a:hover{
+	color: red;
+	transition: .4s;
+	text-transform: capitalize;
+
+}
+
+/*for the imported icon*/
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+
+
+/* for the cards at the bottom of the screen */
+.card{
+	background-color: transparent;
+	width:93%;
+	padding: 0px 0px;
+	font-family: 'Georgia', serif;
+
+	
+}
+
+.card b{
+	color: #800000;
+	font-style: italic;
+}
+
+.card h2{
+	color: #800000;
+	font-style: italic;
+	text-align:center;
+
+}
+
+
+.card h2 a{
+	color: #800000;
+	font-style: italic;
+	text-align: center;
+	
+
+}
+
+
+
+.container{
+	padding:2px 6px;
+	letter-spacing: 1px;
+	line-height: 40px;
+	font-size: 30px;
+	width:100%;
+	height:100%;
+	color: white;
+}
+
+
+
+td {
+	  width :30%;
+	  width :30%;
+		padding:0;
+	
+}
+
+
+
+
+
+
+
+.card a{
+	text-decoration: none;
+	color: black;
+
+}
+
+
+.card a:hover{
+	transform:  scale(5.2); 
+		text-decoration: none;
+	
+}
+
+	
+
+
+footer {
+  text-align: center;
+  width:99.4%;
+  background-color: #1f1d1d;
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+}
+
+
